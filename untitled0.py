@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sun May 26 13:28:29 2024
-
 @author: shubh
 """
 
@@ -383,7 +381,7 @@ for i, v in enumerate(['p1', 'p2', 'p3', 'p4']):
 
     
 
-# Hyperparameter tuning in xgboost
+# Hyperparameter tuning in xgboost- using GridSearchCV- Optimised
 from sklearn.model_selection import GridSearchCV
 x_train, x_test, y_train, y_test = train_test_split(x, y_encoded, test_size=0.2, random_state=42)
 
@@ -411,6 +409,7 @@ print("Test Accuracy:", accuracy)
 
 
 # Best Hyperparameters: {'learning_rate': 0.2, 'max_depth': 3, 'n_estimators': 200}
+# accuracy achieved- 0.781
 
 
 # Based on risk appetite of the bank, we will suggest P1,P2,P3,P4 to the business end user
